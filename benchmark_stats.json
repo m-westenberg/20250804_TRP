@@ -1,0 +1,142 @@
+{
+  "overall_means": [
+    {
+      "algorithm": "GeneticAlgorithm",
+      "mean_fitness": 557.6141777519828,
+      "std_fitness": 0.6850547170625858,
+      "mean_runtime": 11.144705001473426,
+      "mean_deviation": 481.2083749414562,
+      "mean_overload": 76.40580281052658
+    },
+    {
+      "algorithm": "SimulatedAnnealing",
+      "mean_fitness": 602.2589665057126,
+      "std_fitness": 15.367891451208077,
+      "mean_runtime": 2.178468132615089,
+      "mean_deviation": 508.5465343809891,
+      "mean_overload": 93.7124321247235
+    }
+  ],
+  "paired_tests": {
+    "mean_fitness": {
+      "paired_t_test": {
+        "t_statistic": -9.479816318037178,
+        "p_value": 3.947075608095247e-18,
+        "significance": "Significant"
+      },
+      "wilcoxon_signed_rank_test": {
+        "w_statistic": 0.0,
+        "p_value": 7.180732063806761e-35,
+        "significance": "Significant"
+      },
+      "normality_test": {
+        "shapiro_wilk": {
+          "statistic": 0.5842280731107639,
+          "p_value": 1.080797020062594e-21,
+          "normality": "Reject normality"
+        },
+        "dagostino_k2": {
+          "statistic": 148.8713336456217,
+          "p_value": 4.709780226939565e-33,
+          "normality": "Reject normality"
+        }
+      }
+    },
+    "std_fitness": {
+      "paired_t_test": {
+        "t_statistic": -7.646919481076573,
+        "p_value": 4.2996172017689544e-13,
+        "significance": "Significant"
+      },
+      "wilcoxon_signed_rank_test": {
+        "w_statistic": 0.0,
+        "p_value": 7.180732063806761e-35,
+        "significance": "Significant"
+      },
+      "normality_test": {
+        "shapiro_wilk": {
+          "statistic": 0.5139123421353152,
+          "p_value": 3.2141756820780674e-23,
+          "normality": "Reject normality"
+        },
+        "dagostino_k2": {
+          "statistic": 172.73597472361087,
+          "p_value": 3.096418657785597e-38,
+          "normality": "Reject normality"
+        }
+      }
+    },
+    "mean_runtime": {
+      "paired_t_test": {
+        "t_statistic": 38.72209078646075,
+        "p_value": 6.677406797478525e-95,
+        "significance": "Significant"
+      },
+      "wilcoxon_signed_rank_test": {
+        "w_statistic": 20100.0,
+        "p_value": 7.180732063806761e-35,
+        "significance": "Significant"
+      },
+      "normality_test": {
+        "shapiro_wilk": {
+          "statistic": 0.9615325334919642,
+          "p_value": 2.90790713390119e-05,
+          "normality": "Reject normality"
+        },
+        "dagostino_k2": {
+          "statistic": 13.5222805544856,
+          "p_value": 0.0011579080846055724,
+          "normality": "Reject normality"
+        }
+      }
+    },
+    "mean_deviation": {
+      "paired_t_test": {
+        "t_statistic": -11.515188699556886,
+        "p_value": 3.815760261549943e-24,
+        "significance": "Significant"
+      },
+      "wilcoxon_signed_rank_test": {
+        "w_statistic": 0.0,
+        "p_value": 7.180732063806761e-35,
+        "significance": "Significant"
+      },
+      "normality_test": {
+        "shapiro_wilk": {
+          "statistic": 0.6411985197254303,
+          "p_value": 2.6467399980769816e-20,
+          "normality": "Reject normality"
+        },
+        "dagostino_k2": {
+          "statistic": 142.76436399903548,
+          "p_value": 9.97957971081425e-32,
+          "normality": "Reject normality"
+        }
+      }
+    },
+    "mean_overload": {
+      "paired_t_test": {
+        "t_statistic": -7.345878075435104,
+        "p_value": 2.5744198848425516e-12,
+        "significance": "Significant"
+      },
+      "wilcoxon_signed_rank_test": {
+        "w_statistic": 1.0,
+        "p_value": 7.289692846077854e-35,
+        "significance": "Significant"
+      },
+      "normality_test": {
+        "shapiro_wilk": {
+          "statistic": 0.5391978703837639,
+          "p_value": 1.0845966385951993e-22,
+          "normality": "Reject normality"
+        },
+        "dagostino_k2": {
+          "statistic": 151.25928440981212,
+          "p_value": 1.427130612726828e-33,
+          "normality": "Reject normality"
+        }
+      }
+    }
+  }
+}
