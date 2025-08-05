@@ -96,14 +96,14 @@ base_phase_weights = [0.10, 0.40, 0.20, 0.10, 0.15, 0.05]
 base_phase_durations = [0.21, 0.33, 0.25, 0.13, None, 0.07]
 
 projects = [
-    {'project': "WC14 Seoul", 'size': 1250, 'start_date': datetime(2025, 9, 1), 'end_date': datetime(2027, 12, 1)},
-    {'project': "NVvP Voorjaarscongres 2026", 'size': 1250, 'start_date': datetime(2025, 6, 1), 'end_date': datetime(2026, 6, 1)},
-    {'project': "ESTIV 2026", 'size': 525, 'start_date': datetime(2025, 3, 1), 'end_date': datetime(2026, 9, 1)},
-    {'project': "BSBF 2026", 'size': 1750, 'start_date': datetime(2024, 10, 1), 'end_date': datetime(2027, 1, 1)},
-    {'project': "IEEE WCCI 2026", 'size': 1250, 'start_date': datetime(2024, 10, 1), 'end_date': datetime(2026, 9, 1)},
-    {'project': "PROSA 2026", 'size': 180, 'start_date': datetime(2025, 3, 1), 'end_date': datetime(2027, 1, 1)},
-    {'project': "Grenzlandcongres", 'size': 250, 'start_date': datetime(2025, 7, 1), 'end_date': datetime(2026, 1, 1)},
-    {'project': "3 Countries", 'size': 100, 'start_date': datetime(2025, 7, 1), 'end_date': datetime(2026, 11, 1)}
+    {'project': "1", 'size': 1250, 'start_date': datetime(2025, 9, 1), 'end_date': datetime(2027, 12, 1)},
+    {'project': "2", 'size': 1250, 'start_date': datetime(2025, 6, 1), 'end_date': datetime(2026, 6, 1)},
+    {'project': "3", 'size': 525, 'start_date': datetime(2025, 3, 1), 'end_date': datetime(2026, 9, 1)},
+    {'project': "4", 'size': 1750, 'start_date': datetime(2024, 10, 1), 'end_date': datetime(2027, 1, 1)},
+    {'project': "5", 'size': 1250, 'start_date': datetime(2024, 10, 1), 'end_date': datetime(2026, 9, 1)},
+    {'project': "6", 'size': 180, 'start_date': datetime(2025, 3, 1), 'end_date': datetime(2027, 1, 1)},
+    {'project': "7", 'size': 250, 'start_date': datetime(2025, 7, 1), 'end_date': datetime(2026, 1, 1)},
+    {'project': "8", 'size': 100, 'start_date': datetime(2025, 7, 1), 'end_date': datetime(2026, 11, 1)}
 ]
 
 for project in projects:
@@ -114,10 +114,10 @@ for project in projects:
     project['phase_windows'], project['phase_workload'] = pw, wl
 
 managers = [
-    {'manager_name': "Desiree", 'contract_hours': 24, 'productivity': 1.0},
-    {'manager_name': "Nadia", 'contract_hours': 24, 'productivity': 1.0},
-    {'manager_name': "Stephanie", 'contract_hours': 36, 'productivity': 1.0},
-    {'manager_name': "Sanne", 'contract_hours': 24, 'productivity': 1.0}
+    {'manager_name': "1", 'contract_hours': 24, 'productivity': 1.0},
+    {'manager_name': "2", 'contract_hours': 24, 'productivity': 1.0},
+    {'manager_name': "3", 'contract_hours': 36, 'productivity': 1.0},
+    {'manager_name': "4", 'contract_hours': 24, 'productivity': 1.0}
 ]
 
 # -------------------------
