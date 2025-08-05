@@ -16,7 +16,7 @@ The project includes:
 
 | File | Description |
 |------|-------------|
-| **`data_generator.py`** | Generates synthetic datasets of projects & managers with defined characteristics and workload phases. Produces both JSON datasets and PDF reports. |
+| **`synthetic_dataset_generator.py`** | Generates synthetic datasets of projects & managers with defined characteristics and workload phases. Produces both JSON datasets and PDF reports. |
 | **`objective_function.py`** | Defines the objective function (`Z`) and its components (`V` = deviation from contract hours, `P` = overload hours). Includes helper functions for computing workloads. |
 | **`genetic_algorithm.py`** | Implements the **Genetic Algorithm** to optimize project-to-manager allocations. |
 | **`simulated_annealing.py`** | Implements the **Simulated Annealing** algorithm for the same optimization problem. |
@@ -24,9 +24,11 @@ The project includes:
 | **`benchmark_stats.py`** | Performs **paired t-tests**, **Wilcoxon signed-rank tests**, and **normality tests** on benchmark results. Outputs summary statistics and statistical significance analysis. |
 | **`visualize_benchmark.py`** | Creates bar plots, boxplots, heatmaps, and scatter plots to visualize benchmark results. |
 | **`plot_manager_workload.py`** | Generates heatmaps showing **weekly workload per manager** across the project timeline. Saves all heatmaps to a single PDF. |
-| **`Ga Custom Allocation.py`** | Allows you to manually define a custom allocation matrix (`x_ij`) of projects to managers and visualize workloads over time. |
-| **`datasets*.json`** | Synthetic datasets generated for optimization runs. |
+| **`custom_allocation.py`** | Allows you to manually define custom projects, projects managers, and a allocation matrix (`x_ij`) of projects to managers and visualize workloads over time. |
+| **`ga_allocation.py`** | Allows you to manually define custom projects and project managers, and allocates these projects to the managers using Genetic Algorithm and visualizes workloads over time. |
+| **`datasets.json`** | Synthetic datasets generated for optimization runs. |
 | **`benchmark_results.json`** | Output file containing algorithm performance results across datasets. |
+| **`benchmmark_stats.json`** | Output file containing summary statistics of performanece metrics and statistical significance tests |
 | **`visualizations/`** | Contains all generated plots from benchmarking and workload visualizations. |
 
 ---
@@ -123,10 +125,14 @@ python visualize_benchmark.py
 python plot_manager_workload.py
 ```
 
-<h3>7. Try Custom Manual Allocation</h3>
+<h3>7. Try Custom Manual Projects, Project Managers, and Allocations</h3>
 
 ```bash
-python "Ga Custom Allocation.py"
+python "custom_allocation.py"
+```
+
+```bash
+python "ga_allocation.py"
 ```
 
 <h2>📊 Statistical Testing</h2>
